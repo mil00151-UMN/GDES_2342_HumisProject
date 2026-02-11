@@ -1,6 +1,7 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
 div#parent {
     #border: solid 1px black;
     width: 780px;
@@ -12,12 +13,12 @@ div#parent section {
     #height: 100px;
 }
 
-section.header-area{
+section.header-area {
     height: 102px;
     justify-content: center;
 }
 
-section.sub-header-area{
+section.sub-header-area {
     height: 50px;
     background-image: url('files/histHomepic.jpg');
     background-repeat: no-repeat;
@@ -30,8 +31,7 @@ section.main-content-area {
     flex-direction: column;
     justify-content: space-between;
 
-
-    nav { /* apply to all nav tags found inside () descendants of) section.main-content-area */
+    nav.secondary { /* apply to all nav tags found inside () descendants of) section.main-content-area */
         min-height: 20px;
         #border: 1px dotted red;
         padding: 4px 20px;
@@ -46,7 +46,7 @@ section.main-content-area {
             text-transform: uppercase;
             color: #262223;
 
-            &:hover{
+            &:hover {
                 text-decoration: underline;
             }
         }
@@ -64,11 +64,11 @@ section.main-content-area {
         }
     }
 
-    section.brown-box {
+    section.green-box {
         background-color: #BEC4A1;
         padding: 20px;
         border-radius: 13px;
-        margin: 10px;
+        margin: 0 10px 60px 10px;
         display: flex;
 
         > * {
@@ -87,10 +87,19 @@ section.main-content-area {
             }
 
             nav {
-                min-height: 60%;
+                a {
+                    min-height: 30px;
+                }
+                display: flex;
+                flex-direction: column;
+            }
+
+            img {
+                display: flex;
             }
 
         }
+
         .right-side {
             width: 65%;
             background-color: white;
@@ -105,15 +114,17 @@ section.main-content-area {
             }
 
             p {
-                strong{
+                strong {
                     font-size: 12px;
                 }
+
                 font-size: 11px;
                 font-family: Arial, Helvetica, sans-serif;
             }
 
             div.more {
                 text-align: right;
+
                 a {
                     color: darkred;
                     text-decoration: none;
@@ -128,11 +139,16 @@ section.main-content-area {
         }
     }
 }
+
+nav.lowercase {
+    margin-right: -20px;
+}
+
 section.footer-area {
     background-color: #60663E;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    color:white;
+    color: white;
     text-transform: uppercase;
     font-size: 10px;
     padding: 8px 0;
