@@ -89,9 +89,14 @@ section.main-content-area {
             nav {
                 a {
                     min-height: 30px;
+                    display: block;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: white;
+                        background-color: black;
+                    }
                 }
-                display: flex;
-                flex-direction: column;
             }
 
             img {
