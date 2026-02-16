@@ -1,5 +1,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .5px;
+    background-color: #f8f8f8;
+    background-image: url("files/university-medallion-300x300.png");
+    background-blend-mode: lighten;
 }
 
 div#parent {
@@ -30,10 +34,13 @@ section.main-content-area {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-image: url('files/uofu_medallion_rt.gif');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-color: white;
 
     nav.secondary { /* apply to all nav tags found inside () descendants of) section.main-content-area */
         min-height: 20px;
-        #border: 1px dotted red;
         padding: 4px 20px;
         font-size: 10px;
         color: #262223;
@@ -70,9 +77,9 @@ section.main-content-area {
         border-radius: 13px;
         margin: 0 10px 60px 10px;
         display: flex;
+        min-height: 500px;
 
         > * {
-            #border: 1px solid black;
             margin: 10px;
         }
 
@@ -87,14 +94,25 @@ section.main-content-area {
             }
 
             nav {
+                margin-right: 10px;
                 a {
-                    min-height: 30px;
+                    font-size: 11px;
+                    letter-spacing: .2px;
+                    min-height: 32px;
                     display: block;
                     text-decoration: none;
+                    text-transform: uppercase;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    display: flex;
+                    align-items: center;
+                    color: #262223;
+                    border-bottom: 1px #60663E solid;
+                    padding-left: 10px;
 
                     &:hover {
-                        color: white;
-                        background-color: black;
+                        color: darkred;
+                        font-weight: bold;
                     }
                 }
             }
@@ -109,22 +127,25 @@ section.main-content-area {
             width: 65%;
             background-color: white;
             padding: 10px;
+            max-height: 410px;
 
             img {
                 margin-bottom: -15px;
             }
 
             h4 {
-                margin-bottom: -5px;
+                margin-bottom: -3px;
             }
 
             p {
                 strong {
-                    font-size: 12px;
+                    font-size: 11px;
                 }
 
-                font-size: 11px;
+                font-size: 10px;
                 font-family: Arial, Helvetica, sans-serif;
+                text-align: justify;
+                margin-bottom: 4px;
             }
 
             div.more {
@@ -134,7 +155,7 @@ section.main-content-area {
                     color: darkred;
                     text-decoration: none;
                     text-transform: uppercase;
-                    font-size: 11px;
+                    font-size: 10px;
 
                     &:hover {
                         text-decoration: underline;
@@ -143,6 +164,10 @@ section.main-content-area {
             }
         }
     }
+}
+
+nav.footer-area {
+    font-size: 7px;
 }
 
 nav.lowercase {
@@ -155,14 +180,16 @@ section.footer-area {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 7px;
+    letter-spacing: .5px;
     padding: 8px 0;
 }
 
 h4 {
     color: #60663E;
     font-family: Arial, Helvetica, sans-serif;
-    border-bottom: 1px dashed darkred;
+    border-bottom: 2px dotted darkred;
+    padding-bottom: 5px;
     font-weight: unset;
     font-size: 15px;
 }
