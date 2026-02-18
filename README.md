@@ -5,7 +5,7 @@ I am Lucas Miller. A student at the University of Minnesota.
 
 Some of the things that I have learned in this class include:
 
-*Using different tags (div, section, a, h)
-*Flex boxes
-*Formatting text
-*Embedding Images
+* Using different tags (div, section, a, h)
+* Flex boxes
+* Formatting text
+* Embedding Images
