@@ -99,12 +99,11 @@ section.main-content-area {
                     font-size: 11px;
                     letter-spacing: .2px;
                     min-height: 32px;
-                    display: block;
+                    display: flex;
                     text-decoration: none;
                     text-transform: uppercase;
                     margin-left: 10px;
                     margin-right: 10px;
-                    display: flex;
                     align-items: center;
                     color: #262223;
                     border-bottom: 1px #60663E solid;
