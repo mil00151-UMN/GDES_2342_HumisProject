@@ -34,10 +34,10 @@ section.main-content-area {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url('files/uofu_medallion_rt.gif');
+    /*background-image: url('files/uofu_medallion_rt.gif');*/
     background-position: bottom right;
     background-repeat: no-repeat;
-    background-color: white;
+    /*background-color: white;*/
 
     nav.secondary { /* apply to all nav tags found inside () descendants of) section.main-content-area */
         min-height: 20px;

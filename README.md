@@ -3,7 +3,9 @@
 
 I am Lucas Miller. A student at the University of Minnesota. 
 
-Some of the things that I have learned in this class include:
+This project is a recreation of an old version of the UofUT Department of history website. The point is to learn how to code in HTML and CSS using a PDF file as a reference.
+
+Some of the things that I have learned in this class and in this project include:
 
 * Using different tags (div, section, a, h)
 * Flex boxes
