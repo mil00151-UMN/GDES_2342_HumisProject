@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .5px;
+    background-color: #f8f8f8;
+    background-image: url("files/university-medallion-300x300.png");
+    background-blend-mode: lighten;
+}
+
+div#parent {
+    width: 780px;
+    margin: 0 auto;
+}
+
+header {
+    /*border: solid 1px black;*/
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+
+section.content-area {
+    /*border: solid 1px black;*/
+    margin: 0;
+    display: flex;
+    width: 100%;
+    background-color: white;
+}
+
+section.left-side {
+    display: flex;
+    flex-direction: column;
+    background-color: #F4F4F4;
+    width: 30%;
+    border-right: solid 1.5px #cdd1b7;
+    justify-content: space-between;
+
+    nav {
+        margin-right: 10px;
+        margin-top: 15px;
+
+        a {
+            font-size: 11px;
+            letter-spacing: .2px;
+            min-height: 32px;
+            display: flex;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-left: 15px;
+            margin-right: 15px;
+            align-items: center;
+            color: #262223;
+            border-bottom: 1px #60663E solid;
+            padding-left: 10px;
+
+            &:hover {
+                color: darkred;
+                font-weight: bold;
+            }
+        }
+    }
+
+    img {
+        margin: 40px auto 40px auto;
+        width: 80%;
+    }
+}
+
+
+section.right-side {
+    /*border: solid 1px black;*/
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav.secondary {
+    min-height: 20px;
+    padding: 4px 20px;
+    font-size: 10px;
+    color: #262223;
+    display: flex;
+    justify-content: right;
+
+    a {
+        margin: 0 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #262223;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &.lower {
+        a {
+            text-transform: lowercase;
+            font-size: 10px;
+            color: #262223
+        }
+    }
+
+    img {
+        margin-left: 6px;
+    }
+}
+
+section.main-content-area {
+    /*border: solid 1px black;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+section.inner-left-content {
+    width: 35%;
+    /*border: solid 1px blue;*/
+    border-right: dashed 1px black;
+    padding-right: 10px;
+
+
+    h1 {
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+
+
+    a {
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: block;
+        h2 {
+            color: black;
+
+            &:hover {
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+section.inner-right-content {
+    width: 65%;
+    /*border: solid 1px red;*/
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    h1{
+        margin-bottom: 10px;
+    }
+
+    h2{
+        margin-bottom: 8px;
+    }
+}
+
+nav.secondary-lower {
+    display: flex;
+}
+
+h1 {
+    color: #cc0000;
+    font-size: 12pt;
+    letter-spacing: 0;
+    margin-bottom: -10px;
+}
+
+
+h2 {
+    color: #cc0000;
+    font-size: 7pt;
+    font-weight: lighter;
+    margin: 1px 0;
+}
+
+h3{
+    font-size: 11pt;
+    letter-spacing: 0;
+    margin: 15px 0 -3px 0;
+}
+
+h4 {
+    font-size: 7pt;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 2px 0;
+}
+
+h5 {
+    font-size: 7pt;
+    font-weight: lighter;
+    padding-left: 5px;
+    margin: 1px 0;
+}
+
+footer {
+    background-color: #60663e;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 7px;
+    letter-spacing: .5px;
+    padding: 8px 0;
+}
